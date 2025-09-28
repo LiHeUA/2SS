@@ -35,7 +35,7 @@ def kernpca_weightedClustering(cen0,labelKM,K1, V1, X1, sigma, maxIter, data):
     #New Code
     cen = cen0
     iter = 1
-    thr_cen = 1e-5
+    thr_cen = 1e-3
     diff_cen = 1e5
     alpha0 = 1e-3
     junk, last = np.unique(label, return_index=False, return_inverse=True)
@@ -103,7 +103,7 @@ dimData = dataCap.shape[1]
 dim = len(np.unique(idxCap))
 
 # Radomly select data for low-rank decomposition
-sizeTraining = 500
+sizeTraining = 1000
 
 idx = list(range(0,numData))
 
@@ -185,5 +185,6 @@ TV1 = T_sparse @ V1
 #Embedding
 emb2SS = run2SSEmb(dataCap, cen2SS, TV1, sigma)
 err2SS = runCalErr(embGT, emb2SS)
+
 
 print('Error of k-means is ', errKM, ', error of 2SS is ', err2SS)
