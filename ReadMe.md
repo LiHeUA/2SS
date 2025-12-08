@@ -6,10 +6,15 @@ Run **demo.m in Matlab** or **main.py in Python/MindSpore**
 
 [1] Li He and Hong Zhang, Two-Step Nystrom Sampling for Large-scale Kernel Approximation, to appear in IEEE Transactions on Big Data
 
+**Acknowledgement**
+
+This research was financially supported by the Open Research Fund from Guangdong Laboratory of Artificial Intelligence and Digital Economy (SZ), under Grant No. GML-KF-24-15.
+
 Li He
 
 hel@sustech.edu.cn
 
 Sep. 28, 2025
+
 
 
